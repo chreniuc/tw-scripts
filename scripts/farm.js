@@ -1,0 +1,1 @@
+javascript:var%20progressElm=$(%22%3Cdiv%3Eda%3C/div%3E%22);$(%22%23am_widget_Farm%22).before(progressElm);var%20total=$(%22.farm_icon_a%22).length;var%20farms=$(%22.farm_icon_a%22);var%20fasend=function(a)%7Bif(a==total)return;$(farms%5Ba%5D).trigger(%22click%22);progressElm.html(a+%22%20/%20%22+total);setTimeout(%22fasend(%22+a+%22+1)%22,200+Math.random(200))%7D;fasend(0)
